@@ -243,8 +243,8 @@ int main ()
 
         ClearBackground(blue);
         DrawRectangleLinesEx(Rectangle{(float)offset-5, (float)offset-5, (float)cellSize*cellCount+10, (float)cellSize*cellCount+10}, 5, black);
-        DrawText("Retro Snake ~", offset-5, 20, 40, black);
-        DrawText(TextFormat("%i", game.score), offset-5, offset + cellSize*cellCount + 10, 40, black);
+        DrawText("~ Retro Snake ~", offset-5, 20, 40, black);
+        DrawText(TextFormat("Score: %i", game.score), offset-5, offset + cellSize*cellCount + 10, 40, black);
         game.Draw();
 
         EndDrawing();
